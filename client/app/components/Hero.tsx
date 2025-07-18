@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="min-h-[85vh] bg-[url('/images/hero-bg.png')] bg-center relative w-[100vw]">
+        <section className="min-h-[85vh] bg-[url('/images/hero-bg.png')] bg-center relative max-w-[100vw]">
             <div className="bg-[#FFF3E3] text-primary w-[95%] max-w-lg absolute top-[50%] -translate-y-[50%] right-[50%] translate-x-[50%] md:translate-x-[0%]  md:right-[10%] p-8 rounded-lg shadow-lg">
                 <p className="font-semibold">New Arrival</p>
                 <h1 className="text-4xl md:text-5xl font-bold leading-10 md:leading-[60px] max-w-[90%] mt-1">Discover Our New Collection</h1>
