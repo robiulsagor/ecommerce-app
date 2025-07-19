@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProductCard from "./ProductCard";
 
 const products = [
@@ -26,9 +27,9 @@ const ProductsContainer = ({ homepage = true }) => {
             </div>
 
             <div className="flex justify-center mt-8">
-                <button className="bg-transparent text-primary border border-primary font-semibold px-20 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                <Link href={'/shop'} className="bg-transparent text-primary border border-primary font-semibold px-20 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
                     Show More
-                </button>
+                </Link>
             </div>
         </section>
     )
