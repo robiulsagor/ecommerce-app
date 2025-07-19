@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ProductTag from "./ProductTag";
 
 interface Product {
     id: number;
@@ -14,7 +15,7 @@ interface Product {
 const ProductCard = ({ product }: { product: Product }) => {
     return (
         <div className="rounded-md overflow-hidden bg-[#f5f5f7] relative">
-
+            <ProductTag newProduct={product?.new || false} off={product?.off || false} />
             <Image src={product.image} alt={product.name} width={200} height={250} className="w-full h-64 " />
             <div className="p-4 flex flex-col gap-2">
                 <h3 className="text-2xl text-gray-700 font-semibold">{product.name}</h3>
