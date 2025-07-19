@@ -24,6 +24,12 @@ const ProductsContainer = ({ homepage = true }) => {
                     <ProductCard key={product.id} product={product} />
                 ))}
             </div>
+
+            <div className="flex justify-center mt-8">
+                <button className="bg-transparent text-primary border border-primary font-semibold px-20 py-3 hover:bg-primary hover:text-white transition-colors cursor-pointer">
+                    Show More
+                </button>
+            </div>
         </section>
     )
 }
